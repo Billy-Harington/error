@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form with Validation</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+  <!-- 
 <div class="form-container">
     <form id="userForm" name="form">
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" >
           <span class="error-message">Need to fill</span>
         </div>
 
         
         <div class="form-group">
             <label for="age">Age</label>
-            <input type="number" id="age" name="age" required>
+            <input type="number" id="age" name="age" >
             <span class="error-message">Need to fill</span>
           </div>
     
@@ -31,7 +33,7 @@
 
         <div class="form-group">
             <label for="about">About You </label>
-            <input type="text" id="about" name="about" required>
+            <input type="text" id="about" name="about" >
             <span class="error-message">Need to fill</span>
           </div>
   
@@ -41,7 +43,7 @@
     
         <div class="form-group">
           <label for="email">Email address</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" >
           <span class="error-message">Need to fill</span>
         </div>
     
@@ -51,7 +53,7 @@
     
     <div class="form-group">
         <label for="java">What is JavaScript?</label>
-        <input type="text" id="java" name="java" required>
+        <input type="text" id="java" name="java" >
         <span class="error-message">WHERE!!!???</span>
       </div>
 
@@ -65,7 +67,7 @@
 
       <div class="form-group">
         <label for="html">What is HTML?</label>
-        <input type="text" id="html" name="html" required>
+        <input type="text" id="html" name="html" >
         <span class="error-message">Are u crazy bruh</span>
       </div>
       <div class="form-group">
@@ -76,7 +78,7 @@
 
       <div class="form-group">
         <label for="html">What is css?</label>
-        <input type="text" id="css" name="css" required>
+        <input type="text" id="css" name="css" >
         <span class="error-message">Are u crazy bruh</span>
       </div>
 
@@ -88,7 +90,7 @@
 
       <div class="form-group">
         <label for="html">What is your fovourite car?</label>
-        <input type="text" id="car" name="car" required>
+        <input type="text" id="car" name="car" >
         <span class="error-message">Are u crazy bruh</span>
       </div>
 
@@ -96,8 +98,104 @@
 
     <button type="submit" class="submit-btn">Save changes</button>
   </form>
-</div>
+</div> -->
 
-<script src="script.js"></script>
+  <div class="header">
+    <h1>Example from</h1>
+    <p>All: 12 Need: 7 Success: <span class="scs">0</span>/7 Error: <span class="err">0</span>/7</p>
+  </div>
+
+ 
+
+
+    <form name="form">
+      <div class="form-container">
+      <div class="first" >
+         <label for="name" class="required">
+          <span class="title">Name</span>
+          <input type="text" name="name" id="name" placeholder="Name">
+          <span class="error-message">Need to fill</span>
+        </label>
+        <label for="surname" class="required">
+          <span class="title">Surname</span>
+          <input type="text" name="surname" id="surname" placeholder="Surname">
+          <span class="error-message">Need to fill</span>
+        </label>
+
+        <label for="email">
+          <span class="title">Your Email</span>
+          <input type="email" name="email" id="eamil" placeholder="eamil">
+          <span class="error-message">Not necesarry</span>
+        </label>
+
+        <label for="number">
+          <span class="title">Your number</span>
+          <input type="number" name="number" id="number" placeholder="number">
+          <span class="error-message">Not necesarry</span>
+        </label>
+      
+        <label for="mom's name" >
+          <span class="title">Your mom's name</span>
+          <input type="name" name="mom's name" id="mom' name" placeholder="Your mum's name">
+          <span class="error-message">Not necesarry</span>
+        </label>
+
+        <label for="dad's name">
+          <span class="title">Your dad's name</span>
+          <input type="name" name="dad's name" id="dad's name" placeholder="Your dad's name">
+          <span class="error-message">Need to fill</span>
+        </label>
+      </div>
+      <div class="second">
+
+
+        <label for="age" class="required">
+          <span class="title">Surname</span>
+          <input type="age" name="age" id="age" placeholder="age">
+          <span class="error-message">Need to fill</span>
+        </label>
+  
+        <label for="info" class="required">
+          <span class="title">About you</span>
+          <input type="text" name="info" id="info" placeholder="About you">
+          <span class="error-message">Need to fill</span>
+        </label>
+  
+        <label for="java-knowledge" class="required">
+          <span class="title">What is JavaScript?</span>
+          <input type="text" name="java-knowledge" id="java-knowledge" placeholder="What is JavaScript?">
+          <span class="error-message">Need to fill</span>
+        </label>
+  
+        <label for="html-knowledge" class="required">
+          <span class="title">What is Html</span>
+          <input type="text" name="html-knowledge" id="html-knowledge" placeholder="What is Html">
+          <span class="error-message">Need to fill</span>
+        </label>
+  
+        <label for="css-knowledge" class="required">
+          <span class="title">What is CSS</span>
+          <input type="text" name="css-knowledge" id="css-knowledge" placeholder="What is CSS">
+          <span class="error-message">Need to fill</span>
+        </label>
+
+        
+        <label for="favourite-car" >
+          <span class="title">What is your favourite car?</span>
+          <input type="text" name="favourite-car" id="favourite-car" placeholder="What is your favourite car?">
+          <span class="error-message">Not necesarry</span>
+        </label>
+
+      </div>
+
+    </div>
+
+      <button class="btn">submit</button>
+    </form>
+
+ 
+
+  <script src="script.js"></script>
 </body>
+
 </html>
